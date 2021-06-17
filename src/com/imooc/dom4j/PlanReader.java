@@ -1,5 +1,8 @@
 package com.imooc.dom4j;
 
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.util.List;
 
 import org.dom4j.Document;
@@ -8,8 +11,28 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 public class PlanReader {
+	
+	public void writeXml() {
+		SAXReader reader = new SAXReader();
+		String file = "/Users/hujiacheng/Documents/imooc-javaweb/src/plan.xml";
+		try {
+			Document document = reader.read(file);
+			Element root = document.getRootElement();
+			Element course = root.addElement("course");
+			course.addAttribute("no", "4");
+			course.addElement("course-name").setText("线性代数");
+			course.addElement("class-hour").setText("84");
+			course.addElement("exam-form").setText("考试");
+			Writer writer = new OutputStreamWriter(new FileOutputStream(file));
+			document.write(writer);
+			writer.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
-	public void getData() {
+	public void readXml() {
 		SAXReader reader = new SAXReader();
 		String file = "/Users/hujiacheng/Documents/imooc-javaweb/src/plan.xml";
 		try {
@@ -30,7 +53,8 @@ public class PlanReader {
 	
 	public static void main(String[] args) {
 		PlanReader pr = new PlanReader();
-		pr.getData();
+		pr.writeXml();
+		pr.readXml();
 	}
 
 }

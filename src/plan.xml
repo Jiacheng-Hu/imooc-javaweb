@@ -15,4 +15,4 @@
 		<class-hour>108</class-hour>
 		<exam-form>上机考试</exam-form>
 	</course>
-</teaching-plan>
+<course no="4"><course-name>线性代数</course-name><class-hour>84</class-hour><exam-form>考试</exam-form></course></teaching-plan>
