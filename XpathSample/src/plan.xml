@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teaching-plan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="plan.xsd">
+	<course id="001">
+		<course-name>大学英语</course-name>
+		<class-hour>32</class-hour>
+		<exam-form>考试</exam-form>
+	</course>
+	<course id="002">
+		<course-name>工程制图</course-name>
+		<class-hour>48</class-hour>
+		<exam-form>上机考试</exam-form>
+	</course>
+	<course id="003">
+		<course-name>高等数学</course-name>
+		<class-hour>84</class-hour>
+		<exam-form>考试</exam-form>
+	</course>
+	<course id="004">
+		<course-name>计算机应用基础</course-name>
+		<class-hour>108</class-hour>
+		<exam-form>上机考试</exam-form>
+	</course>
+	<course id="005">
+		<course-name>线性代数</course-name>
+		<class-hour>60</class-hour>
+		<exam-form>考试</exam-form>
+	</course>
+	<course id="006">
+		<course-name>理论力学</course-name>
+		<class-hour>82</class-hour>
+		<exam-form>考试</exam-form>
+	</course>
+	<course id="007">
+		<course-name>材料力学</course-name>
+		<class-hour>92</class-hour>
+		<exam-form>考试</exam-form>
+	</course>
+	<course id="008">
+		<course-name>概率论与数理统计</course-name>
+		<class-hour>106</class-hour>
+		<exam-form>考试</exam-form>
+	</course>
+	<course id="009">
+		<course-name>流体力学</course-name>
+		<class-hour>56</class-hour>
+		<exam-form>考试</exam-form>
+	</course>
+	<course id="010">
+		<course-name>化工原理</course-name>
+		<class-hour>90</class-hour>
+		<exam-form>考试</exam-form>
+	</course>
+</teaching-plan>
