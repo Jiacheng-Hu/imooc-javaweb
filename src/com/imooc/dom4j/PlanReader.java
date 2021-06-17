@@ -23,7 +23,7 @@ public class PlanReader {
 			course.addElement("course-name").setText("线性代数");
 			course.addElement("class-hour").setText("84");
 			course.addElement("exam-form").setText("考试");
-			Writer writer = new OutputStreamWriter(new FileOutputStream(file));
+			Writer writer = new OutputStreamWriter(new FileOutputStream(file), "UTF-8");
 			document.write(writer);
 			writer.close();
 		} catch (Exception e) {
