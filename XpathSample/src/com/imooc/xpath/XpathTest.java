@@ -31,6 +31,18 @@ public class XpathTest {
 	public static void main(String[] args) {
 		XpathTest xt = new XpathTest();
 		xt.test("//course");
+		System.out.println("=============================");
+		//课时小于50的课程信息
+		xt.test("/teaching-plan/course[class-hour<50]");
+		System.out.println("=============================");
+		//课程名为高等数学的课程信息
+		xt.test("/teaching-plan/course[course-name='高等数学']");
+		System.out.println("=============================");
+		//查询属性id为001的课程信息
+		xt.test("/teaching-plan/course[@id='001']");
+		System.out.println("=============================");
+		//查询前两条课程信息
+		xt.test("/teaching-plan/course[position()<3]");
 	}
 
 }
